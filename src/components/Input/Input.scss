@@ -1,0 +1,73 @@
+$block-name: '.input';
+
+#{$block-name} {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+    width: 315px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    transition: border-color 0.3s, color 0.3s;
+
+    &::placeholder {
+      color: #6F91BC;
+    }
+
+    &--focus {
+      border-color: #6F91BC;
+
+      input:focus {
+        color: #6F91BC;
+      }
+    }
+
+     &--invalid {
+      border-color: var(--error-color);
+
+      input {
+        color: var(--error-color);
+      }
+    }
+
+    &--valid {
+      border-color: var(--success-color);
+
+      input {
+        color: var(--success-color);
+      }
+    }
+
+    &--disabled {
+      background: #e1e4e8;
+
+      input {
+        background: #e1e4e8;
+      }
+    }
+
+    input {
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      font-size: 16px;
+      line-height: 19px;
+
+      &::placeholder {
+        color: #6F91BC;
+      }
+    }
+
+    .eye-icon {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

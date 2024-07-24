@@ -1,0 +1,29 @@
+$block-name: '.button';
+
+#{$block-name} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(110.46deg, #70C3FF 12.27%, #4B65FF 93.92%);
+  border-radius: 30px;
+  color: #FFFF;
+  outline: none;
+
+  &:focus {
+    background: #4B65FF;
+  }
+
+  &--sm {
+    width: 240px;
+    height: 48px;
+  }
+
+  &--large {
+    width: 340px;
+    height: 58px;
+  }
+
+  &--disabled {
+    background: #7286f4;
+  }
+}

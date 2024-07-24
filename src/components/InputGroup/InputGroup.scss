@@ -1,0 +1,16 @@
+$block-name: '.input-group';
+
+#{$block-name} {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__input {
+    margin-bottom: 10px;
+  }
+
+  &__single-error {
+    position: absolute;
+    top: 55px;
+  }
+}

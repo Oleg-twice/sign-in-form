@@ -1,0 +1,25 @@
+$block-mname: '.validation-messages';
+
+#{$block-mname} {
+  font-size: 13px;
+
+  &--initial {
+    color: var(--primary-color)
+  }
+
+  &--invalid {
+    color: var(--error-color)
+  }
+
+  &--valid {
+    color: var(--success-color);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+}
